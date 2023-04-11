@@ -62,7 +62,7 @@ class myCallback(tf.keras.callbacks.Callback):
 
   def on_epoch_end(self, epoch, logs={}):
 
-    if(logs.get('accuracy') > 0.75  and logs.get('val_accuracy') > 0.75 ):  
+    if(logs.get('accuracy')>0.98 and logs.get('val_accuracy')>0.98)
 
       print("\nAkurasi dan validasi telah mencapai >75%!")
 
